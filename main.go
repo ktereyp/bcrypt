@@ -8,9 +8,9 @@ import (
 	"os"
 )
 
-var cost = flag.Int("cost", 10, "bcrypt cost")
-var content = flag.String("content", "", "strings to be crypt or from stdin")
-var hashedPassword = flag.String("hashed", "", "hashed password")
+var cost = flag.Int("c", 10, "bcrypt cost")
+var content = flag.String("p", "", "password to be crypt or from stdin")
+var hashedPassword = flag.String("h", "", "hashed password")
 
 func main() {
 	flag.Parse()
